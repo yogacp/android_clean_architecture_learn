@@ -1,6 +1,6 @@
 # Learn Clean Architecture in Android
 
-Initial Project to Learning the Clean Architecture for Android, untuk penjelasan lebih lanjut, bisa baca artikel saya tentang Clean Architecture in Android disini:
+Initial Project untuk belajar tentang Clean Architecture di Aplikasi Android, untuk penjelasan lebih lanjut, bisa baca artikel saya disini:
 _...link..._
 
 ## Layers Structure
