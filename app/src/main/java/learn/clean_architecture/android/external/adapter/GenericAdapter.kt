@@ -50,7 +50,7 @@ fun <ITEM> RecyclerView.setUp(items: List<ITEM>,
 
     layoutManager = manager
     adapter = genericAdapter
-    adapter.notifyDataSetChanged()
+    adapter?.notifyDataSetChanged()
 
     return genericAdapter
 }

@@ -1,3 +1,47 @@
 <resources>
     <string name="app_name">Learn Clean Architecture</string>
+    <string name="menu_title">Football Club Menu</string>
+    <string name="menu_football_list">Football Club</string>
+    <string name="menu_football_match">Football Match</string>
+
+    <!-- Bottombar Navigation -->
+    <string name="navigation_prev_match">Prev Match</string>
+    <string name="navigation_next_match">Next Match</string>
+    <string name="navigation_favorite_match">Favorite Match</string>
+
+    <!-- Empty List -->
+    <string name="empty_list_title">Ooops, Maaf</string>
+    <string name="empty_list_content">Belum ada data yang bisa ditampilkan</string>
+
+    <!-- Detail Fc -->
+    <string name="img_content_desc">Detail Images</string>
+
+    <!-- Match Detail -->
+    <string name="md_content1">FC Bola Apapun</string>
+    <string name="md_content2">Detail FC Bola Apapun</string>
+    <string name="md_content_date">2 September 2018</string>
+    <string name="md_content_home_team">Everton</string>
+    <string name="md_content_home_formation">4&#8211;2&#8211;2</string>
+    <string name="md_content_home_score">0</string>
+    <string name="md_content_versus">vs</string>
+    <string name="md_content_away_score">0</string>
+    <string name="md_content_away_team">Everton</string>
+    <string name="md_content_away_formation">4&#8211;3&#8211;3</string>
+    <string name="md_content_goals_title">Goals</string>
+    <string name="md_content_goals_home_team">54 Heung-min</string>
+    <string name="md_content_goals_away_team">30 Saya Sendiri</string>
+    <string name="md_content_shots_title">Shots</string>
+    <string name="md_content_gk_title">Goal Keeper</string>
+    <string name="md_content_gk_home_team">Hugo Lloris</string>
+    <string name="md_content_gk_away_team">Saya lagi</string>
+    <string name="md_content_defense_title">Defenses</string>
+    <string name="md_content_defense_home_team">Davinson Sanchez</string>
+    <string name="md_content_defense_away_team">Lagi lagi Saya</string>
+    <string name="md_content_midfield_title">MidField</string>
+    <string name="md_content_forward_title">Forward</string>
+    <string name="md_content_subtitues_title">Subtitues</string>
+
+    <!-- Favorite Message -->
+    <string name="team_favorited">Berhasil menambahkan ke favorit</string>
+    <string name="team_unfavorited">Berhasil menghapus dari daftar favorit</string>
 </resources>

@@ -8,4 +8,39 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ThemeNoActionBar" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Theme for bottombar -->
+    <style name="FontStyleBottomBar">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <!-- This theme for Spinner -->
+    <style name="SpinnerDefault">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">43dp</item>
+        <item name="android:background">@drawable/cardview_spinner</item>
+        <item name="android:ems">10</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Disable Intent Animation -->
+    <style name="NoAnimationTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <!-- Custom color progressbar -->
+    <style name="DefaultProgressbar" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="WhiteProgressbar" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/appWhite</item>
+    </style>
+
 </resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/llHomePage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appBackground">
+
+    <Spinner
+            android:id="@+id/spLeagues"
+            style="@style/SpinnerDefault"
+            android:popupBackground="@color/colorPrimary"/>
+
+    <RelativeLayout
+            android:id="@+id/rlLeaguesEmpty"
+            android:layout_below="@+id/spLeagues"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+        <include
+                layout="@layout/fragment_empty_list"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/mainSwipeLayout"
+            android:layout_below="@+id/spLeagues"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvFootballClubList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

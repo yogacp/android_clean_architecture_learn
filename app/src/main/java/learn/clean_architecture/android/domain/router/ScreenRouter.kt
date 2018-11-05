@@ -10,7 +10,6 @@ import android.content.Intent
 interface ScreenRouter {
 
     sealed class ActivityScreen {
-        object Homepage : ActivityScreen()
         object DetailFootballClub : ActivityScreen()
     }
 
