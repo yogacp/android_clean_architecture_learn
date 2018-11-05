@@ -1,7 +1,9 @@
 package learn.clean_architecture.android.presentation.homepage.presenter
 
 import io.reactivex.disposables.CompositeDisposable
+import learn.clean_architecture.android.data.responses.teams.Teams
 import learn.clean_architecture.android.domain.usecase.homepage.HomepageUseCase
+import learn.clean_architecture.android.external.scheduler.SchedulerProvider
 import learn.clean_architecture.android.presentation.homepage.contract.HomepageContract
 import javax.inject.Inject
 
@@ -11,9 +13,10 @@ import javax.inject.Inject
  */
 class HomepagePresenter @Inject constructor(
     val view: HomepageContract.View,
-    val mUseCase: HomepageUseCase,
-    val mCompositeDisposable: CompositeDisposable
+    val mUseCase: HomepageUseCase
 ) : HomepageContract.UserActionListener {
+
+    private var mCompositeDisposable = CompositeDisposable()
 
     override fun getListFootballClub(league: String) {
         view.showProgressBar()
@@ -22,7 +25,11 @@ class HomepagePresenter @Inject constructor(
             mUseCase.searchAllTeams(league).subscribe({ response ->
                 view.hideProgressBar()
                 if (response.teams != null) {
-                    view.setupAdapter(response.teams)
+                    val teamList = ArrayList<Teams.TeamsData>()
+                    response.teams?.forEach {
+                        teamList.add(it)
+                    }
+                    view.setupAdapter(teamList)
                 } else {
                     view.showEmptyView()
                     view.clearTeamList()

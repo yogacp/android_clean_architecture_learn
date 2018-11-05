@@ -48,7 +48,6 @@ class HomepageModule {
     @ActivityScope
     internal fun providePresenter(
         view: HomepageContract.View,
-        useCase: HomepageUseCase,
-        compositeDisposable: CompositeDisposable
-    ) = HomepagePresenter(view, useCase, compositeDisposable)
+        useCase: HomepageUseCase
+    ) = HomepagePresenter(view, useCase)
 }

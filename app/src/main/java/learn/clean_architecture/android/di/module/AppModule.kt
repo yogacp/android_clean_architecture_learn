@@ -38,8 +38,4 @@ class AppModule {
     @Provides
     @AppScope
     fun provideSchedulerProvider() = AppSchedulerProvider()
-
-    @Provides
-    @AppScope
-    fun provideCompositeDisposable() = CompositeDisposable()
 }

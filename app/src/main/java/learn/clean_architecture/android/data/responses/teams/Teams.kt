@@ -8,7 +8,7 @@ import com.google.gson.annotations.SerializedName
  */
 sealed class Teams {
     data class Response (
-        @SerializedName("teams") var teams: ArrayList<TeamsData>? = null
+        @SerializedName("teams") var teams: List<TeamsData>? = null
     )
 
     data class TeamsData(
