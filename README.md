@@ -5,7 +5,7 @@ Initial Project untuk belajar tentang Clean Architecture di Aplikasi Android, un
 
 ## Layers Structure
 
-Dalam penerapannya, mungkin bisa berbeda-beda setiap orang, Tapi untuk _starting point,_ Saya menggunakan 5 _Layers_ seperti dibawah ini:
+Dalam penerapannya, mungkin bisa berbeda-beda setiap orang, Tapi untuk _starting point,_ Saya menggunakan 4 _Layers_ seperti dibawah ini:
 
 |Layers                |Entity                   |
 |----------------|-------------------------------|
