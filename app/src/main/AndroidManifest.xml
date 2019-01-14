@@ -3,7 +3,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         package="learn.clean_architecture.android">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
             android:name=".MainApp"
@@ -15,16 +15,16 @@
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
 
-            <activity android:name=".presentation.homepage.view.HomepageActivity">
-                <intent-filter>
-                    <action android:name="android.intent.action.MAIN" />
-                    <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
-            </activity>
+        <activity android:name=".presentation.homepage.view.HomepageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
 
-            <activity
-                    android:theme="@style/ThemeNoActionBar"
-                    android:name=".presentation.detailpage.view.DetailPageActivity" />
+        <activity
+                android:theme="@style/ThemeNoActionBar"
+                android:name=".presentation.detailpage.view.DetailPageActivity"/>
 
     </application>
 
