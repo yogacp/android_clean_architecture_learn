@@ -5,7 +5,6 @@ import android.content.Context
 import com.google.gson.Gson
 import dagger.Module
 import dagger.Provides
-import io.reactivex.disposables.CompositeDisposable
 import learn.clean_architecture.android.di.scope.AppScope
 import learn.clean_architecture.android.domain.router.ScreenRouter
 import learn.clean_architecture.android.domain.router.ScreenRouterImpl

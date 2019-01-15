@@ -2,7 +2,6 @@ package learn.clean_architecture.android.presentation.homepage.module
 
 import dagger.Module
 import dagger.Provides
-import io.reactivex.disposables.CompositeDisposable
 import learn.clean_architecture.android.data.network.repository.SportDbDataStore
 import learn.clean_architecture.android.data.network.repository.SportDbRepository
 import learn.clean_architecture.android.data.network.services.SportDbServices
